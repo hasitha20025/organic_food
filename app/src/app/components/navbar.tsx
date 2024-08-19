@@ -1,6 +1,6 @@
-"use client";
-import React, { useState } from "react";
-import Logo from "./logo";
+'use client';
+import React, { useState } from 'react';
+import Logo from './logo';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,15 +10,19 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white p-2">
+    <nav className="bg-white p-2 container mx-auto">
       <div className=" flex justify-between items-center container mx-auto">
-
-      <div className="flex items-center">
-        <a href="/"> <Logo /> </a>
-        <a href="/">
-          <p className="text-primary text-lg font-bold ml-2 cursor-pointer">Organic Foods</p>
-        </a>     
-      </div>
+        <div className="flex items-center">
+          <a href="/">
+            {' '}
+            <Logo />{' '}
+          </a>
+          <a href="/">
+            <p className="text-primary text-lg font-bold ml-2 cursor-pointer">
+              Organic Foods
+            </p>
+          </a>
+        </div>
 
         <div className="block lg:hidden">
           <button
@@ -36,44 +40,52 @@ const Navbar = () => {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
-                d={isOpen ? "" : "M4 6h16M4 12h16m-7 6h7"}
+                d={isOpen ? '' : 'M4 6h16M4 12h16m-7 6h7'}
               ></path>
             </svg>
           </button>
         </div>
         <div
           className={`${
-            isOpen ? "block" : "hidden"
+            isOpen ? 'block' : 'hidden'
           } w-full lg:flex lg:items-center lg:w-auto`}
         >
           <ul className="flex flex-col items-end lg:flex-row lg:space-x-6 text-white">
             <li className="block py-2 px-4">
-              <a href="#home"
-              onClick={handleLinkClick}
-              className="hover:text-primaryHover font-bold cursor-pointer text-primary ">              
+              <a
+                href="#home"
+                onClick={handleLinkClick}
+                className="hover:text-primaryHover font-bold cursor-pointer text-primary "
+              >
                 Home
-              </a>             
+              </a>
             </li>
             <li className="block py-2 px-4">
-              <a href="#home"
-              onClick={handleLinkClick}
-              className="hover:text-primaryHover font-bold cursor-pointer text-primary ">                 
+              <a
+                href="#home"
+                onClick={handleLinkClick}
+                className="hover:text-primaryHover font-bold cursor-pointer text-primary "
+              >
                 Products
-              </a>             
+              </a>
             </li>
             <li className="block py-2 px-4">
-              <a href="#home"
-              onClick={handleLinkClick}
-              className="hover:text-primaryHover font-bold cursor-pointer text-primary ">                 
+              <a
+                href="#home"
+                onClick={handleLinkClick}
+                className="hover:text-primaryHover font-bold cursor-pointer text-primary "
+              >
                 Aboust Us
-              </a>             
+              </a>
             </li>
             <li className="block py-2 px-4">
-              <a href="#home"
-              onClick={handleLinkClick}
-              className="hover:text-primaryHover font-bold cursor-pointer text-primary ">                
+              <a
+                href="#home"
+                onClick={handleLinkClick}
+                className="hover:text-primaryHover font-bold cursor-pointer text-primary "
+              >
                 Contact Us
-              </a>             
+              </a>
             </li>
           </ul>
         </div>

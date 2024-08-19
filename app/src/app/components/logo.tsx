@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'next/image';
 import barnd_logo from '../../../public/images/logos/logo.png';
 
 export default function Logo() {
@@ -10,5 +10,5 @@ export default function Logo() {
       height={50}
       alt="Brand logo"
     />
-  )
+  );
 }
