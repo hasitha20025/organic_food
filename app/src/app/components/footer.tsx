@@ -34,10 +34,10 @@ export default function Footer() {
 
         {/* Part 2: Contact Information */}
         <div className="flex flex-col items-center md:items-start">
-          <p className="mb-4">Contact Us</p>
-          <p>Address: 7th Mile post, Katugasthota Road, Kandy</p>
-          <p>Phone: (+94) 78 437 5524</p>
-          <p>Email: organicfood@gmail.com</p>
+          <p className="mb-2 font-semibold">Contact Us</p>
+          <p className="mb-2">Address: 7th Mile post, Katugasthota Road, Kandy</p>
+          <p className="mb-2">Phone: (+94) 78 437 5524</p>
+          <p >Email: organicfood@gmail.com</p>
 
           <div >
             <p className="my-3">Follow us on social media</p>
