@@ -1,4 +1,7 @@
+
 import { Metadata } from "next";
+import Carousels from "./components/carousel";
+
 
 export const metadata: Metadata = {
   title: 'Oganic Foods | Home',
@@ -8,7 +11,8 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-    <p>Home</p>
+    
+    <Carousels/>
     </>
   );
 }
