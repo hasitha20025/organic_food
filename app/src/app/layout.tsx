@@ -20,9 +20,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       
-      <body className={inter.className}>
+      <body className="bg-background ">
+        <div className="text-center  mb-2 py-2">
+          <p className="text-stone-950 text-xs">The <span className="text-primary font-bold">#1</span> Organic Food product Range in SriLanka</p>
+        </div>
         <Navbar/>
-        {children}
+        <div className="container mx-auto">
+          {children}
+        </div>
         <Footer/>
       </body>
     </html>
