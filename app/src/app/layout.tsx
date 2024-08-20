@@ -5,6 +5,7 @@ import './globals.css';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
 import Baner from './components/baner';
+import WhatsappIcon from './components/whatsappicon';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -23,7 +24,10 @@ export default function RootLayout({
       <body className=" ">
         <Baner/>
         <Navbar />
-        <div className="container mx-auto">{children}</div>
+        <div className="container mx-auto">
+          {children}
+          <WhatsappIcon />
+        </div>
         <Footer />
       </body>
     </html>

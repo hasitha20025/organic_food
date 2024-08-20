@@ -1,23 +1,20 @@
 import { Metadata } from 'next';
-import Carousels from './components/carousel';
-import WhatsappIcon from './components/whatsappicon';
-import AboutUs from './components/aboutUs';
-import OurProducts from './components/ourProducts';
-import ProductShowPage from './components/productShowPage';
+import Home from './pages/home/page';
+import Products from './pages/product/page';
+import About from './pages/about/page';
+
 
 export const metadata: Metadata = {
   title: 'Oganic Foods | Home',
   description: '...',
 };
 
-export default function Home() {
+export default function App() {
   return (
     <>
-      <Carousels />
-      <WhatsappIcon />
-      <OurProducts/>
-      <ProductShowPage/>
-      <AboutUs/>
+      <Home/>
+      <Products/>
+      <About/>     
     </>
   );
 }

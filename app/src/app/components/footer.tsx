@@ -5,6 +5,7 @@ import { FaLinkedin } from 'react-icons/fa';
 import { FaSquareInstagram } from 'react-icons/fa6';
 import { AiFillTikTok } from 'react-icons/ai';
 import { FaPinterest } from 'react-icons/fa';
+import Link from 'next/link';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -27,10 +28,12 @@ export default function Footer() {
                 </a>
               </div>
               <div className="space-y-2 text-center md:text-left">
-                <p className="cursor-pointer">Home</p>
-                <p className="cursor-pointer">Product</p>
-                <p className="cursor-pointer">About Us</p>
-                <p className="cursor-pointer">Contact Us</p>
+
+                <Link href="/"><p className="cursor-pointer my-2">Home</p></Link>
+                <Link href="#products"><p className="cursor-pointer my-2">Product</p></Link>
+                <Link href="#about"><p className="cursor-pointer my-2">About Us</p></Link>
+                <Link href="#contact"><p className="cursor-pointer my-2">Contact Us</p></Link>
+                
               </div>
             </div>
 

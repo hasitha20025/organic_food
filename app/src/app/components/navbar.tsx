@@ -1,6 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import Logo from './logo';
+import Link from 'next/link';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,15 +14,15 @@ const Navbar = () => {
     <nav className="bg-white p-2  shadow-sm">
       <div className=" flex justify-between items-center container mx-auto">
         <div className="flex items-center">
-          <a href="/">
-            {' '}
-            <Logo />{' '}
-          </a>
-          <a href="/">
+          <Link href="/">
+            
+            <Logo />
+          </Link>
+          <Link href="/">
             <p className="text-primary text-lg font-bold ml-2 cursor-pointer">
               Organic Foods
             </p>
-          </a>
+          </Link>
         </div>
 
         <div className="block lg:hidden">
@@ -52,40 +53,40 @@ const Navbar = () => {
         >
           <ul className="flex flex-col items-end lg:flex-row lg:space-x-6 text-white">
             <li className="block py-2 px-4">
-              <a
+              <Link
                 href="#home"
                 onClick={handleLinkClick}
                 className="hover:text-primaryHover font-bold cursor-pointer text-primary "
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li className="block py-2 px-4">
-              <a
-                href="#home"
+              <Link
+                href="#products"
                 onClick={handleLinkClick}
                 className="hover:text-primaryHover font-bold cursor-pointer text-primary "
               >
                 Products
-              </a>
+              </Link>
             </li>
             <li className="block py-2 px-4">
-              <a
-                href="#home"
+              <Link
+                href="#about"
                 onClick={handleLinkClick}
                 className="hover:text-primaryHover font-bold cursor-pointer text-primary "
               >
                 About Us
-              </a>
+              </Link>
             </li>
             <li className="block py-2 px-4">
-              <a
-                href="#home"
+              <Link
+                href="#contact"
                 onClick={handleLinkClick}
                 className="hover:text-primaryHover font-bold cursor-pointer text-primary "
               >
                 Contact Us
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
