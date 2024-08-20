@@ -3,6 +3,7 @@ import Carousels from './components/carousel';
 import WhatsappIcon from './components/whatsappicon';
 import AboutUs from './components/aboutUs';
 import OurProducts from './components/ourProducts';
+import ProductShowPage from './components/productShowPage';
 
 export const metadata: Metadata = {
   title: 'Oganic Foods | Home',
@@ -15,6 +16,7 @@ export default function Home() {
       <Carousels />
       <WhatsappIcon />
       <OurProducts/>
+      <ProductShowPage/>
       <AboutUs/>
     </>
   );
