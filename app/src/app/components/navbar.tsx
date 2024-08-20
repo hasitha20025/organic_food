@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white p-2  shadow-md">
+    <nav className="bg-white p-2  shadow-sm">
       <div className=" flex justify-between items-center container mx-auto">
         <div className="flex items-center">
           <a href="/">
@@ -75,7 +75,7 @@ const Navbar = () => {
                 onClick={handleLinkClick}
                 className="hover:text-primaryHover font-bold cursor-pointer text-primary "
               >
-                Aboust Us
+                About Us
               </a>
             </li>
             <li className="block py-2 px-4">
