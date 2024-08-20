@@ -4,6 +4,7 @@ import './globals.css';
 
 import Navbar from './components/navbar';
 import Footer from './components/footer';
+import Baner from './components/baner';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -19,13 +20,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-background ">
-        <div className="text-center  mb-2 py-2">
-          <p className="text-stone-950 text-xs">
-            The <span className="text-primary font-bold">#1</span> Organic Food
-            product Range in SriLanka
-          </p>
-        </div>
+      <body className=" ">
+        <Baner/>
         <Navbar />
         <div className="container mx-auto">{children}</div>
         <Footer />
