@@ -1,6 +1,5 @@
 import Carousels from "@/app/components/carousel";
 
-
 export default function Home() {
   return (
     <>

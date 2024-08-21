@@ -10,9 +10,20 @@ import WhatsappIcon from './components/whatsappicon';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Organic Foods',
-  description: 'Organic Foods',
+  title: 'My Awesome Website - Home',
+  description: 'Welcome to the homepage of My Awesome Website.',
+  keywords: ['awesome', 'website', 'homepage'],
+  authors: [{ name: 'Your Name' }],
+  openGraph: {
+    title: 'My Awesome Website - Home',
+    description: 'Welcome to the homepage of My Awesome Website.',
+    url: '',
+    siteName: 'My Awesome Website',
+    locale: 'en_US',
+    type: 'website',
+  } 
 };
+
 
 export default function RootLayout({
   children,
@@ -22,11 +33,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className=" ">
-        <Baner/>
-        <Navbar />
+        <header>
+            <Baner/>
+            <Navbar />
+        </header>
         <div className="container mx-auto">
-          {children}
-          <WhatsappIcon />
+          <main>
+              {children}
+              <WhatsappIcon />
+          </main>
         </div>
         <Footer />
       </body>
