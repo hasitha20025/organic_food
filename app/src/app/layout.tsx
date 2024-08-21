@@ -10,6 +10,7 @@ import WhatsappIcon from './components/whatsappicon';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
+  
   title: 'My Awesome Website - Home',
   description: 'Welcome to the homepage of My Awesome Website.',
   keywords: ['awesome', 'website', 'homepage'],
